@@ -5,10 +5,9 @@
     <title>The New Hampshire Gazette</title>
 
     <!-- StyleSheet -->
-    <!--
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
           integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
@@ -17,6 +16,15 @@
 
 <nav>
     <div class="nav-container">
+        <div class="mobile">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center gap-2 w-100">
+                    <i class="bi bi-list"></i>
+                    <span>Menu</span>
+                </div>
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
         <ul class="menu">
             <li class="menu-item">
                 <a href="#">Subscribe/Donate</a>
@@ -42,14 +50,16 @@
 
 <header>
     <div class="header-container">
-        <a href="index.html" class="title">The New Hampshire Gazette</a>
+        <p class="title">
+            <a href="index.html">The New Hampshire Gazette</a>
+        </p>
         <p class="subtitle">The Nation’s Oldest Newspaper™ • Editor: Steven Fowle • Founded 1756 by Daniel Fowle</p>
     </div>
 </header>
 
 <nav>
-    <div class="nav-container">
-        <ul class="menu dark secondary-menu">
+    <div class="nav-container dark">
+        <ul class="menu secondary-menu">
             <li class="menu-item">
                 <a href="#">The Fortnightly Rant</a>
             </li>
@@ -66,6 +76,10 @@
                 <a href="#">Page 8</a>
             </li>
         </ul>
+        <div class="mobile d-flex align-items-center justify-content-center gap-2 p-0">
+            <i class="bi bi-list p-0"></i>
+            <span class=" p-0">Departments</span>
+        </div>
     </div>
 </nav>
 
@@ -73,11 +87,13 @@
     <div id="section1">
         <div class="section-container column-container">
             <div class="double-column-left">
-                <h3 class="mb-20-ln12">The Nation’s Oldest Newspaper.</h3>
-                <h2 class="mb-20-ln12 fw-b">A svelte, one-ounce packet of unfettered, non-fiction news.</h2>
+                <h3 class="">The Nation’s Oldest Newspaper.</h3>
+                <h2 class="fw-b">A svelte, one-ounce packet of unfettered, non-fiction news.</h2>
                 <p class="fw-b">Distributed for free by people just like you.</p>
-                <p class="mb-0">This map shows where you can get the latest copy of the</p>
-                <p class="mt-0 fw-b fs-i">Gazette</p>
+                <p>
+                    This map shows where you can get the latest copy of the
+                    <span class="fw-b fs-i">Gazette</span>
+                </p>
                 <p class="fw-b fs-i">You can be part of our unique distribution system</p>
                 <p><a class="button" href="#">Learn More</a></p>
             </div>

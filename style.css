@@ -9,8 +9,12 @@ body {
     padding: 0;
 }
 
-.nav-container {
+h2 {
+    font-size: 30px;
+}
 
+h3 {
+    font-size: 20px;
 }
 
 .menu {
@@ -59,13 +63,20 @@ body {
 }
 
 .title {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    font-size: 55px;
+    word-wrap: break-word;
+    font-weight: 700;
+}
+
+.title a {
     text-decoration: none;
     text-transform: none;
     cursor: pointer;
     color: #222222;
-    font-size: 55px;
-    font-weight: 700;
-    line-height: 66px;
+    font-size: inherit;
 }
 
 .subtitle {
@@ -79,10 +90,6 @@ body {
     padding: 0;
 }
 
-.secondary-menu {
-
-}
-
 .secondary-menu li {
     position: relative;
     float: none;
@@ -90,10 +97,10 @@ body {
 }
 
 .dark {
-    background-color: #2f2f2f;
+    background-color: #222222;
 }
 
-.dark a, .dark i {
+.dark a, .dark i, .dark span {
     font-size: 13px;
     color: #ffffff;
     padding-left: 18px;
@@ -103,7 +110,7 @@ body {
 }
 
 .dark .menu-item:hover {
-    background-color: #3f3f3f;
+    background-color: #3a3a3a;
 }
 
 .column-container {
@@ -115,6 +122,8 @@ body {
 
 .column-container div {
     float: left;
+    padding: 0 10px 0 10px;
+    margin-bottom: 1.5em;
 }
 
 .double-column-left {
@@ -130,7 +139,7 @@ body {
     background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://www.nhgazette.com/wp-content/uploads/2020/04/nhgazette-hero.jpg);
 }
 
-#section1 h3, h2{
+#section1 h3, #section1 h2 {
     margin: 0 0 20px 0;
     line-height: 1.2em;
     text-transform: none;
@@ -139,14 +148,6 @@ body {
 #section1 p {
     margin: 0 0 1.5em 0;
     text-transform: none;
-}
-
-.mb-0 {
-    margin-bottom: 0 !important;
-}
-
-.mt-0 {
-    margin-top: 0 !important;
 }
 
 #section1 .double-column-left h3 {
@@ -159,8 +160,8 @@ body {
 }
 
 #img-map {
+    width: 100%;
     max-width: 400px;
-    max-height: 400px;
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -187,6 +188,57 @@ a.button {
     font-size: 0.8em;
     text-decoration: none;
 }
+
 .p-10 {
     padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .nav-container ul {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .column-container {
+        display: block;
+        overflow: hidden;
+    }
+
+    .column-container div {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .column-container div {
+        float: left;
+        width: 50%;
+    }
+}
+
+.mobile {
+    padding: 20px;
+    font-size: 15px;
 }
