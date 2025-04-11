@@ -256,21 +256,47 @@ article {
         width: 100%;
         float: none;
     }
+
     span {
         font-size: 65%;
         color: rgba(0, 0, 0, .5);
         padding: 0;
     }
+
     .art-body {
         font-size: 65%;
         line-height: 1.5;
     }
+
     i {
         color: #737373;
         cursor: pointer;
         font-size: 15px;
     }
+
     i:hover {
         color: #2d4372;
     }
+}
+
+.old-articles {
+    article {
+        margin-bottom: 2em;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    header {
+        margin: 0 0 1em;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+.bg-gray {
+    background: #f5f5f5;
 }
