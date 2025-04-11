@@ -300,3 +300,79 @@ article {
 .bg-gray {
     background: #f5f5f5;
 }
+
+#section6 {
+    padding: 100px 35px;
+    color: #ffffff;
+    background-image: linear-gradient(0deg, rgba(34, 34, 34, 0.69), rgba(34, 34, 34, 0.69)), url(https://placehold.co/1920x580);
+    background-size: cover;
+
+    div {
+        max-width: 985px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+
+.simple-section div {
+    padding: 40px 35px;
+}
+
+#section8 p {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.footer {
+    padding: 60px 40px 40px 40px;
+    text-align: left;
+    background-color: #d6d6d6;
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    aside {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        list-style: disc;
+        padding: 0;
+        ul{
+            margin: 5px 0 0 1em;
+        }
+    }
+
+    li {
+        list-style-type: none;
+        position: relative;
+        font-size: 17px;
+        color: #3a3a3a;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+#src-footer {
+    width: 100%;
+    color: #666666;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+footer div {
+    color: #fff;
+    padding: 20px;
+    font-size: 15px;
+}
