@@ -376,3 +376,26 @@ footer div {
     padding: 20px;
     font-size: 15px;
 }
+
+#scroll-top {
+    display: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    opacity: 1;
+    transform: translateY(0);
+    font-size: 15px;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+    z-index: 10;
+    transition: opacity 300ms ease-in-out;
+}
+
+#scroll-top:hover {
+    background-color: #555;
+}

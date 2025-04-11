@@ -411,11 +411,35 @@
         </div>
     </div>
 </div>
+
 <footer class="dark ">
     <div>
         ©1756-2025 The New Hampshire Gazette - The Nation’s Oldest Newspaper™ <br>
         Published 26 times a year on alternating Fridays
     </div>
 </footer>
+
+<a id="scroll-top" href="#" title="Scroll back to top">
+    <i class="bi bi-chevron-up"></i>
+</a>
+
 </body>
 </html>
+
+<script>
+    // Get the button
+    let btnTop = document.getElementById("scroll-top");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    }
+</script>
