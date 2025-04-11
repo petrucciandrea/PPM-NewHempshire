@@ -17,6 +17,10 @@ h3 {
     font-size: 20px;
 }
 
+img {
+    max-width: 100%;
+}
+
 .menu {
     display: block;
     box-sizing: border-box;
@@ -126,17 +130,18 @@ h3 {
     margin-bottom: 1.5em;
 }
 
-.double-column-left {
+.dc-left {
     width: 60%;
 }
 
-.double-column-right {
+.dc-right {
     width: 40%;
 }
 
 #section1 {
     background-size: cover;
-    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://www.nhgazette.com/wp-content/uploads/2020/04/nhgazette-hero.jpg);
+    /*background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://www.nhgazette.com/wp-content/uploads/2020/04/nhgazette-hero.jpg);*/
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://placehold.co/617x226);
 }
 
 #section1 h3, #section1 h2 {
@@ -150,12 +155,12 @@ h3 {
     text-transform: none;
 }
 
-#section1 .double-column-left h3 {
+#section1 .dc-left h3 {
     font-size: 20px;
     font-weight: 400;
 }
 
-#section1 .double-column-left h2 {
+#section1 .dc-left h2 {
     font-weight: 700;
 }
 
@@ -232,7 +237,7 @@ a.button {
 }
 
 @media (min-width: 768px) and (max-width: 1025px) {
-    .column-container div {
+    .double-column {
         float: left;
         width: 50%;
     }
@@ -241,4 +246,31 @@ a.button {
 .mobile {
     padding: 20px;
     font-size: 15px;
+}
+
+article {
+    text-align: left;
+    display: block;
+
+    div {
+        width: 100%;
+        float: none;
+    }
+    span {
+        font-size: 65%;
+        color: rgba(0, 0, 0, .5);
+        padding: 0;
+    }
+    .art-body {
+        font-size: 65%;
+        line-height: 1.5;
+    }
+    i {
+        color: #737373;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    i:hover {
+        color: #2d4372;
+    }
 }
