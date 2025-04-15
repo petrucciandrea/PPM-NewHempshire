@@ -7,6 +7,9 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
+    div {
+        box-sizing: unset;
+    }
 }
 
 h2 {
@@ -19,6 +22,10 @@ h3 {
 
 img {
     max-width: 100%;
+}
+
+nav {
+    text-align: center;
 }
 
 .menu {
@@ -59,6 +66,18 @@ img {
     color: #ffffff;
 }
 
+.menu-search-active  {
+    z-index: 21;
+    background-color: #3f3f3f;
+    i {
+        color: #ffffff;
+    }
+}
+
+.nav-container.mx-auto {
+    max-width: 985px;
+    position: relative;
+}
 
 .header-container {
     padding: 30px 40px 25px 40px;
@@ -244,8 +263,10 @@ a.button {
 }
 
 .mobile {
-    padding: 20px;
     font-size: 15px;
+    div div {
+        padding: 20px;
+    }
 }
 
 article {
@@ -342,7 +363,8 @@ article {
     ul {
         list-style: disc;
         padding: 0;
-        ul{
+
+        ul {
             margin: 5px 0 0 1em;
         }
     }
@@ -398,4 +420,57 @@ footer div {
 
 #scroll-top:hover {
     background-color: #555;
+}
+
+
+input, select, textarea {
+    background: #fafafa;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.navigation-search {
+    position: absolute;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: opacity 100ms ease-in-out;
+    opacity: 0;
+}
+
+.navigation-search.nav-search-active {
+
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navigation-search input {
+    color: #ffffff;
+    background-color: #3f3f3f;
+    border: 0;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.mobile-active {
+    display: block !important;
+    margin: 0;
+
+    .menu-item {
+        clear: both;
+        text-align: left;
+        width: 100%;
+    }
+    .menu-item.item-i {
+        display: none;
+    }
 }
