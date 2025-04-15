@@ -7,9 +7,6 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
-    div {
-        box-sizing: unset;
-    }
 }
 
 h2 {
@@ -26,6 +23,10 @@ img {
 
 nav {
     text-align: center;
+}
+
+.content div {
+    box-sizing: unset;
 }
 
 .menu {
@@ -66,9 +67,10 @@ nav {
     color: #ffffff;
 }
 
-.menu-search-active  {
+.menu-search-active {
     z-index: 21;
     background-color: #3f3f3f;
+
     i {
         color: #ffffff;
     }
@@ -264,6 +266,7 @@ a.button {
 
 .mobile {
     font-size: 15px;
+
     div div {
         padding: 20px;
     }
@@ -328,13 +331,13 @@ article {
     background-image: linear-gradient(0deg, rgba(34, 34, 34, 0.69), rgba(34, 34, 34, 0.69)), url(https://placehold.co/1920x580);
     background-size: cover;
 
-    div {
-        max-width: 985px;
-    }
-
     h2 {
         margin-bottom: 20px;
     }
+}
+.content div div, footer div {
+    max-width: 985px;
+    margin: auto;
 }
 
 .simple-section div {
@@ -350,6 +353,11 @@ article {
     padding: 60px 40px 40px 40px;
     text-align: left;
     background-color: #d6d6d6;
+
+    .row {
+        max-width: 985px;
+        margin: auto;
+    }
 
     h2 {
         font-size: 20px;
@@ -374,6 +382,14 @@ article {
         position: relative;
         font-size: 17px;
         color: #3a3a3a;
+        i {
+            color: #737373;
+            cursor: pointer;
+        }
+
+        i:hover {
+            color: #2d4372;
+        }
     }
 
     a {
@@ -430,6 +446,10 @@ input, select, textarea {
     max-width: 100%;
 }
 
+input[type=image] {
+    background: none;
+}
+
 .navigation-search {
     position: absolute;
     left: 0;
@@ -470,6 +490,7 @@ input, select, textarea {
         text-align: left;
         width: 100%;
     }
+
     .menu-item.item-i {
         display: none;
     }
