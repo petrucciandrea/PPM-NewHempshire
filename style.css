@@ -162,7 +162,7 @@ nav {
 #section1 {
     background-size: cover;
     /*background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://www.nhgazette.com/wp-content/uploads/2020/04/nhgazette-hero.jpg);*/
-    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://placehold.co/617x226);
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 0.05)), url(https://placehold.co/617x226?text=background);
 }
 
 #section1 h3, #section1 h2 {
@@ -328,7 +328,7 @@ article {
 #section6 {
     padding: 100px 35px;
     color: #ffffff;
-    background-image: linear-gradient(0deg, rgba(34, 34, 34, 0.69), rgba(34, 34, 34, 0.69)), url(https://placehold.co/1920x580);
+    background-image: linear-gradient(0deg, rgba(34, 34, 34, 0.69), rgba(34, 34, 34, 0.69)), url(https://placehold.co/1920x580?text=background);
     background-size: cover;
 
     h2 {
